@@ -1,0 +1,734 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>125/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Sep 29 10:10:09 CDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>171 seconds (171965 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Practice Questions 4 page using submit", "dsAlgo:011 Array feature and functionality test"</td>
+<td><div><pre>java.lang.AssertionError: Result do not match expected [Submission Successful] but found [ No tests were collected]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at stepDefinition.ArrayPageSteps.user_validates_the_output_for_the_practice_question(ArrayPageSteps.java:99)
+	at ✽.user validates the output for the practice question(file:///C:/Users/akash/git/dsAlgoProject/dsAlgo/src/test/java/com/dsAlgo/features/11_ArrayPage.feature:236)
+</pre></div><a href='#' onClick='toggleBox("stack-trace187123764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace187123764'><pre>java.lang.AssertionError: Result do not match expected [Submission Successful] but found [ No tests were collected]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at stepDefinition.ArrayPageSteps.user_validates_the_output_for_the_practice_question(ArrayPageSteps.java:99)
+	at ✽.user validates the output for the practice question(file:///C:/Users/akash/git/dsAlgoProject/dsAlgo/src/test/java/com/dsAlgo/features/11_ArrayPage.feature:236)
+</pre></div></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "The user is able to navigate to Data Structure page", "dsAlgo:008 Data Structures feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message in Practice Questions 1 page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid inputs "username" and "password"", "dsAlgo:004 Login page feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel "Sheet1" and 2", "dsAlgo:004 Login page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:002 Home page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and trying to sign out", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:009 Stack page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates creating linked list link page", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User click get started on linked list page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message in Practice Questions 2 page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click on register", "dsAlgo:002 Home page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:002 Home page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Time Complexity link page", "dsAlgo:008 Data Structures feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is on tree page and navigate to overview of trees and enter invalid inputs on try editor page", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is navigated to queue page", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Arrays Using List in try editor page for invalid code", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on the Home page and click sign in", "dsAlgo:002 Home page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Implementation using array in try editor page for invalid code", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Practice Questions 2 page using submit", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>3</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Arrays using list page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is navigated to queue page from home page", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:002 Home page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and trying to sign out", "dsAlgo:004 Login page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for implement linked list link in try editor page for invalid code", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for deletion link  in try editor page for invalid code", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and trying to sign out", "dsAlgo:009 Stack page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Creating Linked Lists in try editor page for invalid code", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Introduction in try editor page for invalid code", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:002 Home page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates implement linked list link in python page", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Time Complexity in try editor page for invalid code", "dsAlgo:008 Data Structures feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and trying to sign out", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is on tree page and navigate to Implementation Of BST and enter invalid inputs on try editor page", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is on tree page and navigate to Implementation Of BST and enter valid inputs on try editor page", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Implementation page in try editor page for invalid code", "dsAlgo:009 Stack page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Basic operations in Lists page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User click get started on linked list page", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>5</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates traversal link page", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message in Practice Questions 3 page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Arrays In Python page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for traversal link page in try editor page for invalid code", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Basic Operations in List in try editor page for invalid code", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Practice Questions 2 page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Applications of array in try editor page for invalid code", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel "Sheet1" and 3", "dsAlgo:004 Login page feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters only username and click register button", "dsAlgo:003 Register page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enter with valid credentials", "dsAlgo:004 Login page feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Introduction link page", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is navigated to queue page", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Graph link page in try editor page for invalid code", "dsAlgo:006 Graph feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is on tree page and navigate Practice Questions page", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User redirects to login page", "dsAlgo:003 Register page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Arrays In Python in try editor page for invalid code", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:002 Home page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user should navigate to the application option in the stack page", "dsAlgo:009 Stack page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Practice Questions 4 page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is navigated to queue page", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:008 Data Structures feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and trying to sign out", "dsAlgo:006 Graph feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Operations in stack in try editor page for invalid code", "dsAlgo:009 Stack page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Implementation using collection deque in try editor page for invalid code", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel "Sheet1" and 0", "dsAlgo:004 Login page feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Practice Questions page", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates insertion link page", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User click get started on Graph page", "dsAlgo:006 Graph feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Graph link page", "dsAlgo:006 Graph feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is on Home page and click getstarted link without sign in", "dsAlgo:002 Home page feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:002 Home page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for insertion link in try editor page for invalid code", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Graph Represenation link page in try editor page for invalid code", "dsAlgo:006 Graph feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Implementation of queue in try editor page for invalid code", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters invalid details and click register button", "dsAlgo:003 Register page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Practice Questions page", "dsAlgo:008 Data Structures feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User launch the dsAlgo application", "dsAlgo:001 launching the ds portal application"</td>
+<td></td>
+<td>3</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is navigated to queue page", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and trying to sign out", "dsAlgo:008 Data Structures feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Applications of array page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Practice Questions 1 page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for types of linked list link in try editor page for invalid code", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates types of linked list link page", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Practice Questions 1 page using submit", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and trying to sign out", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters all details blank and click register button", "dsAlgo:003 Register page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message in Practice Questions 4 page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User redirects to register page", "dsAlgo:004 Login page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Graph Representations link page", "dsAlgo:006 Graph feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user should navigate back to the stack page", "dsAlgo:009 Stack page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters the valid details and click register button", "dsAlgo:003 Register page feature and functionality test"</td>
+<td></td>
+<td>4</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:006 Graph feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User enters only username and password and click register button", "dsAlgo:003 Register page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is on tree page and navigate to overview of trees and enter valid inputs on try editor page", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Practice Questions 3 page", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user is navigated to stack page", "dsAlgo:009 Stack page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "", "dsAlgo:007 Tree feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates Practice Questions 3 page using submit", "dsAlgo:011 Array feature and functionality test"</td>
+<td></td>
+<td>2</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for queue operations in try editor page for invalid code", "dsAlgo:010 Queue page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates deletion link page", "dsAlgo:005 Linked List feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User on login page and login with invalid and valid inputs from Excel "Sheet1" and 1", "dsAlgo:004 Login page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User validates error message for Applications page in try editor page for invalid code", "dsAlgo:009 Stack page feature and functionality test"</td>
+<td></td>
+<td>1</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+<tr>
+<td title='com.dsAlgo.runner.Runner.runScenario()'><b>runScenario</b><br>Test class: com.dsAlgo.runner.Runner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "user should navigate to the practice question page", "dsAlgo:009 Stack page feature and functionality test"</td>
+<td></td>
+<td>0</td>
+<td>com.dsAlgo.runner.Runner@15de0b3c</td></tr>
+</table><p>
+</body>
+</html>
